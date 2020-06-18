@@ -30,6 +30,7 @@ nav>a{
     color: white;
     font-family: "San Francisco";
     font-weight: 1000;
+    font-size: larger;
     margin: 7px;
 }
 
@@ -44,6 +45,10 @@ nav>a:hover{
     font-size: 40px;
     position: fixed;
     left: 95%;
+}
+
+.btn_top:hover{
+    color: rgb(207, 207, 207); 
 }
 
 .h{
@@ -75,7 +80,29 @@ h1{
 }
 
 #about{
-    min-height: 100vh;
+    height: 100vh;
+}
+
+.foto{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.foto img{
+    width: 30%;
+    align-self: center;
+    border-radius: 100%;
+}
+
+.foto p{
+    align-self: center;
+    font-family: "San Francisco";
+    font-weight: 1000;
+    font-size: 25px;
+    margin: 20px;
+    width: 50%;
+
 }
 
 #course{
@@ -105,7 +132,7 @@ details{
     margin: 25px;
 }
 
-details[open]{
+details[open], summary:hover{
     background-color: rgba(24, 23, 23, 0.884);
     color: white;
     border-radius: 10px;
