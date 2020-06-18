@@ -35,9 +35,9 @@ nav>a{
 }
 
 nav>a:hover{
-    color: rgb(207, 207, 207);  
+    background: white;
+    color: rgba(24, 23, 23, 0.884);  
 }
-
 
 .btn_top{
     text-decoration: none;
@@ -137,6 +137,78 @@ details[open], summary:hover{
     color: white;
     border-radius: 10px;
 }
+
+.cadeiras{
+    text-decoration: none;
+    color: white;
+}
+
+.cadeiras:hover{
+    color: rgb(207, 207, 207)
+}
+
+.modal {
+    position: fixed;
+    top: 20vh;
+    right: 40vh;
+    bottom: 20vh;
+    left: 40vh;
+    font-family: "San Francisco";
+    color: rgba(24, 23, 23, 0.884);
+    background: white;
+    border: rgba(24, 23, 23, 0.884) solid 7px;
+    border-radius: 20px;
+    z-index: 99999;  /*garantir que ela fique na frente das outras*/
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.fechar {
+    position: absolute;
+    width: 30px;
+    right: -15px;
+    top: -20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 1000;
+    line-height: 30px;
+    margin-top: 5px;
+    background: white;
+    border-radius: 50%;
+    border: rgba(24, 23, 23, 0.884) solid 5px;
+    font-size: 20px;
+    color: rgba(24, 23, 23, 0.884);
+}
+
+.text{
+    display: flex;
+}
+
+.text .infos, .text .proj{
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.proj a, .infos a{
+    text-decoration: none;
+    color: rgba(24, 23, 23, 0.884);
+    background: none;
+}
+
+.proj a:hover, .infos a:hover{
+    color: white;
+    background: rgba(24, 23, 23, 0.884);
+}
+
 
 footer{
     height: 50px;
