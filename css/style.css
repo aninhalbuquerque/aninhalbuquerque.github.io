@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
 }
@@ -19,6 +23,8 @@ header{
     height: 10vh;
     display: flex;
     justify-content: center;
+    position: fixed;
+    width: 100%;
 }
 
 nav{
@@ -45,6 +51,7 @@ nav>a:hover{
     font-size: 40px;
     position: fixed;
     left: 95%;
+    top: 11vh;
 }
 
 .btn_top:hover{
@@ -102,7 +109,6 @@ h1{
     font-size: 25px;
     margin: 20px;
     width: 50%;
-
 }
 
 #course{
@@ -113,7 +119,7 @@ h2{
     text-align: center;
     font-family: "San Francisco";
     font-size: 35px;
-    padding-top: 20px;
+    padding-top: 20vh;
 }
 
 .c{
@@ -130,6 +136,11 @@ details{
     font-size: 20px;
     color: rgba(24, 23, 23, 0.884);
     margin: 25px;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+
 }
 
 details[open], summary:hover{
@@ -186,6 +197,11 @@ details[open], summary:hover{
     border: rgba(24, 23, 23, 0.884) solid 5px;
     font-size: 20px;
     color: rgba(24, 23, 23, 0.884);
+}
+
+.fechar:hover{
+    background: rgba(24, 23, 23, 0.884);
+    color: white;
 }
 
 .text{
