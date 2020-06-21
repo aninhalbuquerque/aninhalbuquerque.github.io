@@ -122,6 +122,10 @@ h2{
     padding-top: 20vh;
 }
 
+div.modal > h2{
+    padding-top: 0;
+}
+
 .c{
     justify-content: center;
     margin: 10px;
