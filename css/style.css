@@ -1,3 +1,8 @@
+*{
+    --greey: rgba(24, 23, 23, 0.884);
+    --hover-greey: rgb(207, 207, 207);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -12,14 +17,13 @@ header{
     text-align: center;
 }
 
-
 @font-face {
     font-family: "San Francisco";
     src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
   }
 
 .nav{
-    background-color: rgba(24, 23, 23, 0.884);
+    background-color: var(--greey);
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -42,12 +46,12 @@ nav>a{
 
 nav>a:hover{
     background: white;
-    color: rgba(24, 23, 23, 0.884);  
+    color: var(--greey);  
 }
 
 .btn_top{
     text-decoration: none;
-    color: rgba(24, 23, 23, 0.884);
+    color: var(--greey);
     font-size: 40px;
     position: fixed;
     left: 95%;
@@ -55,7 +59,7 @@ nav>a:hover{
 }
 
 .btn_top:hover{
-    color: rgb(207, 207, 207); 
+    color: var(--hover-greey); 
 }
 
 .h{
@@ -65,7 +69,7 @@ nav>a:hover{
 }
 
 h1{
-    color: rgba(24, 23, 23, 0.884);
+    color: var(--greey);
     font-family: "San Francisco";
     max-width: 200px;
     text-align: right!important;
@@ -79,11 +83,11 @@ h1{
 #nome{
     text-decoration: none;
     color: white;
-    background-color: rgba(24, 23, 23, 0.884);
+    background-color: var(--greey);
 }
 
 #nome:hover{
-    background-color: rgb(207, 207, 207);
+    background-color: var(--hover-greey);
 }
 
 #about{
@@ -100,6 +104,11 @@ h1{
     width: 30%;
     align-self: center;
     border-radius: 100%;
+    transition: box-shadow .1s;
+}
+
+.foto img:hover{
+    box-shadow: 0px 0px 7px 7px var(--greey);
 }
 
 .foto p{
@@ -107,6 +116,7 @@ h1{
     font-family: "San Francisco";
     font-weight: 1000;
     font-size: 25px;
+    color: var(--greey);
     margin: 20px;
     width: 50%;
 }
@@ -138,7 +148,7 @@ details{
     font-family: "San Francisco";
     font-weight: 1000;
     font-size: 20px;
-    color: rgba(24, 23, 23, 0.884);
+    color: var(--greey);
     margin: 25px;
     transition-property: all;
     transition-duration: .5s;
@@ -148,7 +158,7 @@ details{
 }
 
 details[open], summary:hover{
-    background-color: rgba(24, 23, 23, 0.884);
+    background-color: var(--greey);
     color: white;
     border-radius: 10px;
 }
@@ -159,7 +169,7 @@ details[open], summary:hover{
 }
 
 .cadeiras:hover{
-    color: rgb(207, 207, 207)
+    color: var(--hover-greey)
 }
 
 .modal {
@@ -169,9 +179,9 @@ details[open], summary:hover{
     bottom: 20vh;
     left: 40vh;
     font-family: "San Francisco";
-    color: rgba(24, 23, 23, 0.884);
+    color: var(--greey);
     background: white;
-    border: rgba(24, 23, 23, 0.884) solid 7px;
+    border: var(--greey) solid 7px;
     border-radius: 20px;
     z-index: 99999;  /*garantir que ela fique na frente das outras*/
     opacity:0;
@@ -198,13 +208,13 @@ details[open], summary:hover{
     margin-top: 5px;
     background: white;
     border-radius: 50%;
-    border: rgba(24, 23, 23, 0.884) solid 5px;
+    border: var(--greey) solid 5px;
     font-size: 20px;
-    color: rgba(24, 23, 23, 0.884);
+    color: var(--greey);
 }
 
 .fechar:hover{
-    background: rgba(24, 23, 23, 0.884);
+    background: var(--greey);
     color: white;
 }
 
@@ -220,19 +230,19 @@ details[open], summary:hover{
 
 .proj a, .infos a{
     text-decoration: none;
-    color: rgba(24, 23, 23, 0.884);
+    color: var(--greey);
     background: none;
 }
 
 .proj a:hover, .infos a:hover{
     color: white;
-    background: rgba(24, 23, 23, 0.884);
+    background: var(--greey);
 }
 
 
 footer{
     height: 50px;
-    background: rgba(24, 23, 23, 0.884);
+    background: var(--greey);
     text-align: center;
     padding: 3%;
 }
@@ -245,7 +255,7 @@ footer a i{
 }
 
 footer a i:hover{
-    color: rgb(207, 207, 207);
+    color: var(--hover-greey);
 }
 
 

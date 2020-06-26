@@ -1,0 +1,81 @@
+@font-face{
+    font-family: "San Francisco";
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+body{
+    min-height: 100vh;
+    font-family: "San Francisco";
+    margin: 10vh auto;
+    width: 35%;
+}
+
+.container{
+    border: 5px solid rgba(24, 23, 23, 0.884);
+    border-radius: 0 0 10px 10px;
+}
+
+h1{
+    background: rgba(24, 23, 23, 0.884);
+    color: white;
+    margin: 0;
+    padding: 5%;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+h2{
+    margin: 4vh;
+    padding: 2vh 4vh;
+    color: rgba(24, 23, 23, 0.884);
+    border-bottom: 3px solid rgba(24, 23, 23, 0.884);
+}
+
+.new-task{
+    margin: 0 6vh;
+    display: flex;
+}
+
+.new-task input{
+    width: 75%;
+    height: 5vh;
+    font-family: "San Francisco";
+    font-size: large;
+}
+
+li input[type=text]{
+    width: 62%;
+    height: 5vh;
+    font-family: "San Francisco";
+    font-size: large;
+}
+
+.new-task button, li button{
+    font-family: "San Francisco";
+    font-weight: 1000;
+    background: rgba(24, 23, 23, 0.884);
+    color: white;
+    width: 15%;
+    height: 4vh;
+    margin: 0 3vh;
+    align-self: center;
+}
+
+.new-task button:hover, li button:hover{
+    border: 2px solid rgba(24, 23, 23, 0.884);
+    background: white;
+    color: rgba(24, 23, 23, 0.884);
+}
+
+li {
+    list-style: none;
+}
+
+.edit{
+    border: none;
+}
+
+.edit:focus{
+    border: normal;
+}
+
