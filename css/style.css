@@ -239,6 +239,32 @@ details[open], summary:hover{
     background: var(--greey);
 }
 
+#stuff{
+    height: 100vh;
+    padding-top: 15vh;
+}
+
+
+#stuff a{
+    font-family: "San Francisco";
+    font-weight: 1000;
+    font-size: x-large;
+    text-decoration: none;
+    background: var(--greey);
+    color: white;
+    text-align: center;
+    margin: 1%;
+    width: 14%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#stuff a:hover{
+    border: var(--greey) solid 3px;
+    background: white;
+    color: var(--greey);
+}
+
 
 footer{
     height: 50px;

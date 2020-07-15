@@ -1,0 +1,72 @@
+@font-face{
+    font-family: "San Francisco";
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+body{
+    min-height: 100vh;
+    font-family: "San Francisco";
+    margin: 10vh auto;
+    width: 35%;
+}
+
+h1{
+    background: rgba(24, 23, 23, 0.884);
+    color: white;
+    margin: 0;
+    padding: 5%;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.box{
+    border: 5px solid rgba(24, 23, 23, 0.884);
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
+.labels{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.labels label{
+    font-weight: 1000;
+    font-size: x-large;
+}
+
+.labels input{
+    width: 20%;
+    height: 5vh;
+    font-family: "San Francisco";
+    font-size: large;
+}
+
+.one{
+    display: inline;
+    margin: 2%;
+}
+
+button{
+    font-family: "San Francisco";
+    font-weight: 1000;
+    font-size: large;
+    background: rgba(24, 23, 23, 0.884);
+    color: white;
+    width: 25%;
+    height: 6vh;
+    margin: 0 3vh;
+    align-self: center;
+}
+
+button:hover{
+    border: 2px solid rgba(24, 23, 23, 0.884);
+    background: white;
+    color: rgba(24, 23, 23, 0.884);
+}
+
+p{
+    font-weight: 1000;
+    font-size: xx-large;
+}

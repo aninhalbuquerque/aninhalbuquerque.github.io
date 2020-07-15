@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Number Generator</title>
+	<link rel="icon" href="../img/icon.png" type="image/x-icon" style="transform: rotate(45deg);">
+	<link rel="stylesheet" href="css/styleNG.css">
+	<script src="js/scriptNG.js"></script>    
+</head>
+<body onkeypress="tecla()">
+    <h1>Number Generator</h1>
+    <div class="box">
+        <div class="labels">
+            <div class="one">
+                <label>min:</label>
+                <input type="number" id="min"/>
+            </div>
+            <div class="one">
+                <label>max:</label>
+                <input type="number" id="max"/>
+            </div>
+        </div>
+        <button onclick="calc()">random</button>
+        <p id="n"></p>
+    </div>
+</body>
